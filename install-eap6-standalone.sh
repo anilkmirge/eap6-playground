@@ -2,7 +2,6 @@
 #
 # JBoss EAP Accelerator script - Owned and Reserved by Vizuri
 #
-sudo
 echo  '##############################################################################################################################################'
 echo  '##############################################################################################################################################'
 echo  '#################################### Welcome to JBoss EAP Installation and Configuration set up (Standalone mode) ################################'
@@ -47,7 +46,10 @@ cd $dir_path/jboss-eap-6.*/bin
 echo Setting permission to all the script files ....
 chmod 755 *.sh
 echo Done...permission set.
+echo Let\'s first set a management user for JBoss EAP for your to be able to access the manegement console as an admin. Please chose the user type, username, password and role\(s\) to continue
+./add-user.sh 
 echo Now starting the jboss eap in standalone mode.....
 ./standalone.sh
 fi
+echo End of the script
 #End of the script
