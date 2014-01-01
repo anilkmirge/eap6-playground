@@ -17,11 +17,11 @@ Steps to get started:
 
 4) Depending upon which mode you want to install and run your eap, run the appropriate shell script as follows:
 
-    a)Standalone mode - Open a terminal and cd into the root folder of this project and run sudo ./install-eap6-standalone.sh /EAP6_downloaded_dir_path/ /EAP6_installation_destination_dir_path
+     a)Standalone mode - Open a terminal and cd into the root folder of this project and run sudo ./install-eap6-standalone.sh /EAP6_downloaded_dir_path/ /EAP6_installation_destination_dir_path
 
-    b)Standalone mode using full profile - Open a terminal and cd into the root folder of this project and run sudo ./install-eap6-standalone-full.sh /EAP6_downloaded_dir_path/ /EAP6_installation_destination_dir_path
+     b)Standalone mode using full profile - Open a terminal and cd into the root folder of this project and run sudo ./install-eap6-standalone-full.sh /EAP6_downloaded_dir_path/ /EAP6_installation_destination_dir_path
 
-   c)Domain mode - Open a terminal and cd into the root folder of this project and run sudo ./install-eap6-domain.sh /EAP6_downloaded_dir_path/ /EAP6_installation_destination_dir_path
+    c)Domain mode - Open a terminal and cd into the root folder of this project and run sudo ./install-eap6-domain.sh /EAP6_downloaded_dir_path/ /EAP6_installation_destination_dir_path
 
      
 
