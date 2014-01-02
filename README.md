@@ -1,5 +1,8 @@
 eap6-playground
 ===============
+Author: Anil K Mirge
+Level: Intermediate
+Target Product: JBoss EAP 6.2 
 
 EAP6 Starter Project
 
