@@ -1,0 +1,12 @@
+connect 
+if (result == "STARTED") of /host=master/server-config=server-one:read-attribute(name=status)
+/host=master/server-config=server-one:stop
+end-if
+
+if (result == "STARTED") of /host=master/server-config=server-two:read-attribute(name=status)
+/host=master/server-config=server-two:stop
+end-if
+
+:read-resource
+
+/host=master/server-config=server-one:start

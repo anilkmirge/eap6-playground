@@ -41,13 +41,21 @@ echo About to unzip the jboss-eap-6.x.x.zip file into $dir_path
 cd $dir_path
 jar xvf jboss-eap-6.*.*.zip
 echo '######################## Successfully extracted the JBoss EAP archive ########################'
+echo Removing the archived file for sanity
+rm -rf jboss-eap-6.*.*.zip
+echo Creating two more copies for the slave controllers under $dir_path/node1 and $dir_path/node2
+mkdir node1
+cp -R $dir_path/jboss-eap-6.* node1/
+mkdir node2
+cp -R $dir_path/jboss-eap-6.* node2/
 
+echo Setting permission to all the script files within the domain controller....
 cd $dir_path/jboss-eap-6.*/bin
-echo Setting permission to all the script files ....
 chmod 755 *.sh
 echo Done...permission set.
-echo Let\'s first set a management user for JBoss EAP for your to be able to access the manegement console as an admin. Please chose the user type, username, password and role\(s\) to continue
-./add-user.sh 
+echo Let\'s first set a management user for JBoss EAP for your to be able to access the manegement console as an admin. Adding adminsitrator with username/password as jbossadmin/jbossadmin1!, but you can add and chose more users by running EAP_HOME/bin/add-user.bat\(sh\) and providing user type, username, password and role\(s\) to continue
+./add-user.sh -u 'jbossuser' -p 'jbossuser1!' 
+
 echo Now starting the jboss eap in domain mode.....
 ./domain.sh
 fi

@@ -1,0 +1,23 @@
+#Connect to the JBoss EAP CLI
+connect
+#Stop the servers within the domain/master
+if (result == "STARTED") of /host=master/server-config=server-one:read-attribute(name=status)
+/host=master/server-config=server-one:stop(blocking=true)
+end-if
+
+if (result == "STARTED") of /host=master/server-config=server-two:read-attribute(name=status)
+/host=master/server-config=server-two:stop(blocking=true)
+end-if
+
+if (result == "STARTED") of /host=master/server-config=server-three:read-attribute(name=status)
+/host=master/server-config=server-three:stop(blocking=true)
+end-if
+
+#Start the batch mode
+batch
+/host=master/server-config=server-one:remove
+/host=master/server-config=server-two:remove
+/host=master/server-config=server-three:remove
+
+#Execute the batch operation
+run-batch
