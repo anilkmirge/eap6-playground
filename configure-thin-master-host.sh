@@ -1,7 +1,9 @@
 eap_path=$1
 cli_path=$2
 echo Configuring the host controllers using CLI
-if [[ -z "$eap_path" || -z "$cli_path"]]
+echo $eap_path
+echo $cli_path
+if [[ -z "$eap_path" || -z "$cli_path" ]]
 then echo Please enter a valid path for installed JBoss EAP and CLI scripts 
 exit 0
 fi
