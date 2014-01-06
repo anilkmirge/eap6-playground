@@ -1,4 +1,4 @@
-eap6-playground
+jboss-eap6-playground
 ===============
 Author: Anil K Mirge
 Level: Intermediate
