@@ -8,7 +8,7 @@ EAP6 Starter Project
 
 Objective: The goal of this project is to automate the process of installing, configuring and deploying applications into JBoss Enterprise Application Platform (EAP) 6.0 and above.
 
-Disclaimer: This project is a work in progress only and may have some glitches. So, please use it at your own risk. I will continue to update this project better and improvise through your feedback and my own development in understanding JBoss EAP 6.x and above.
+Disclaimer: This project is a work in progress only and may have some glitches. So, please use it at your own risk. I will continue to make this project better and improvise it through your feedback and my own development in understanding JBoss EAP 6.x and above.
 
 Steps to get started:
 
